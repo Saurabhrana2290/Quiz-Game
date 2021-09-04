@@ -36,7 +36,7 @@ questions=[
     answer : "Butterscotch",
   },
   {
-    question : "How does he like to travel? (Bus/Bike/Cycle)",
+    question : "How does he like to travel? (Bus/Bike/Cycle)  ",
     answer : "Cycle",
   },
   {
