@@ -1,11 +1,11 @@
 var readLineSync = require("readline-sync");
 var score=0;
 var userName=readLineSync.question("What is your name?  ");
-console.log("Welcome "+userName+"!. Do you know Sauarabh!");
+console.log("\nWelcome "+userName+"!. Lets see, How well do you know Sauarabh!\n");
 questions=[
   {
-    question : "Where does he live?  ",
-    answer :"Manduwala",
+    question : "Where does he live?  (Dehradun/Noida/Saharanpur)  ",
+    answer :"Saharanpur",
   },
   {
     question : "What does he like to drink? (Tea/Coffee)  ",
@@ -22,6 +22,26 @@ questions=[
   {
     question : "In which branch he has completed BTech? (CSE/IT/ME/Electrical)  ",
     answer : "CSE",
+  },
+  {
+    question : "Which is his favourite sports game? (Football/Hockey/Cricket)  ",
+    answer : "Cricket",
+  },
+  {
+    question : "When is his birthday? (26 Jan/6 March/16 Feb)  ",
+    answer : "16 Feb",
+  },
+  {
+    question : "What is his favourite Icecream? (Vanilla/Chocolate/Butterscotch)  ",
+    answer : "Butterscotch",
+  },
+  {
+    question : "How does he like to travel? (Bus/Bike/Cycle)",
+    answer : "Cycle",
+  },
+  {
+    question : "Which social media app he mostly use? (Facebook/Instagram/Youtube)  ",
+    answer : "Youtube",
   }
 ];
 function play(question,answer){
@@ -41,4 +61,4 @@ for(var i=0; i<questions.length; i++){
   play(questions[i].question,questions[i].answer);
   console.log("-----------------------------------");
 }
-console.log("Your Score is "+score +" out of 5");
+console.log("Your Score is "+score +" out of 10");
